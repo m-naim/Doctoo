@@ -1,0 +1,31 @@
+{
+  "name": "to-do",
+  "version": "1.0.0",
+  "description": "to do app. using react and node js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "client": "cd client && yarn start",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "author": "naim",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongodb": "^2.2.33",
+    "mongoose": "^5.4.3",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "session": "^0.1.0"
+  },
+  "engines": {
+    "node": "10.13.0"
+  }
+}

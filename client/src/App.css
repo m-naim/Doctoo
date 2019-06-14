@@ -1,0 +1,314 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 100vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* rendez vous */
+.rdv-container{
+  height: 70vh;
+  overflow: auto;
+}
+.rdv-picker{
+  display: flex;
+  flex-direction: column;
+}
+.rdv-picker-body-dates, .rdv-picker-body-hours{
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.rdv-picker-body, .rdv-picker-footer{
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+}
+
+/* doc container */
+.doc-container{
+  height: 70vh;
+  overflow: auto;
+}
+
+.doctor-card{
+  display: flex;
+  border-bottom: 1px solid green;
+  padding: 5px;
+  margin: 0px 20px 0px 30px;
+}
+.doctor-card a, input[type=button]{
+  height: 30px;
+  padding: 0px 5px 0px 5px !important;
+  margin: 0px 10px 0px 0px !important;
+}
+.doctor-card:hover{
+  background-color: rgba(164, 214, 164, 0.418);
+}
+.doctor-card-infos{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 25vw;
+  min-width: 300px;
+}
+.doctor-card-btns{
+  display: flex;
+}
+.doctor-card-name{
+  font-size: 1.2rem;
+  color: #0f9b0f;
+}
+.doctor-card-address{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* search group */
+
+.search-group input{
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 3px 10px 3px 10px;
+}
+.search-group input:focus{
+  border: 1px solid gray;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 25, .2);
+  outline: none;
+}
+.search-group button{
+  height: 36px;
+}
+button, input[type=button]{
+  background-color: whitesmoke;
+  border: 1px solid green;
+  border-radius: 15px;
+  line-height: 30px;
+  padding: 0px 50px 0px 50px;
+  margin: 10px;
+  color: green;
+}
+button:hover, input[type=button]:hover{
+  box-shadow: 1px 1px 1px 1px rgba(87, 90, 87, 0.527);
+}
+button:focus, input[type=button]:focus{
+  outline:none;
+  box-shadow: 2px 2px 2px 2px rgba(87, 90, 87, 0.527);
+  background-color: green;
+  color: snow;
+}
+
+/* main containers */
+.result-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-group{
+  display: flex;
+  justify-content: center;
+  height: 12vh;
+  background: #a8ff78; 
+  background: -webkit-linear-gradient(to right, #a8ff78, #78ffd6); 
+  background: linear-gradient(to right, #78ffd6,#a8ff78);
+}
+
+
+/* rdv buttons */
+.rdv-options, .rdv-date{
+  min-width: 80px;
+  padding: 5px;
+  border-bottom: 3px solid green;
+}
+.rdv-btn-time, .rdv-btn{
+  text-align: center;
+  background-color: snow;
+  color: green;
+  border: 1px solid green;
+  margin: 5px;
+}
+.rdv-btn-time:hover, .rdv-btn:hover{
+  box-shadow: 1px 1px 1px 1px rgba(87, 90, 87, 0.527);
+}
+.rdv-btn-time:focus{
+  
+  background-color: green;
+  color: snow;
+}
+.rdv-picker-body-dates{
+  border-bottom: 3px solid green;
+  margin: 0px;
+}
+
+/* navbar */
+
+.nav-title{
+  color: green;
+  font-size: 2rem;
+  margin: 5px;
+  margin-left: 60px;
+  line-height: 60px;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+.nav-cnx{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+/* login */
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+ }
+
+.login-body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: snow;
+  height: 100vh;
+  background: #a8ff78; 
+  background: -webkit-linear-gradient(to right, #a8ff78, #78ffd6); 
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
+}
+.login-cnt{
+  display: flex;
+  height: 40vh;
+  width: 50vw;
+  flex-direction: column;
+  align-items: center;
+}
+.login-header-cnt a{
+  font-size: 4.2rem;
+  margin: 5px;
+  text-align: center;
+}
+
+.fcb-btn{
+  background-color: #4267b2;
+  
+}
+.ggl-btn{
+  background-color: antiquewhite;
+  color: black;
+}
+.fcb-btn, .ggl-btn{
+  padding: 7px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.fcb-btn-span{
+  color: rgb(215, 250, 215) !important;
+  margin-left: 20px;
+}
+.ggl-btn-span{
+  margin-left: 20px;
+}
+.fa-facebook-f{
+  color: antiquewhite;
+}
+
+.logo{
+  color: rgb(34, 178, 34);
+  font-size: 3rem;
+}
+
+.login-header-cnt p{
+  color: rgb(34, 178, 34);
+}
+
+input{
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 3px 10px 3px 10px;
+}
+
+input:focus{
+  border: 1px solid gray;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 25, .2);
+  outline: none;
+}
+
+.login-local{
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer */
+.footer{
+  height: 6vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #78ffd6 ;
+}
+.heart{
+  color: #ee0e0e;
+}
+
+/* scrooling */
+/* .doc-container::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 px rgba(0,0,0,0.3);
+	background-color: rgb(217, 218, 216);
+}
+
+.doc-container::-webkit-scrollbar{
+  width: 18px;
+  height: 8px;
+} 
+
+.doc-container::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #a8ff78;
+}
+.doc-container::-webkit-scrollbar-button{
+  display: block;
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+}  */
