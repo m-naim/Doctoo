@@ -2,7 +2,7 @@
   "name": "to-do",
   "version": "1.0.0",
   "description": "to do app. using react and node js.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",

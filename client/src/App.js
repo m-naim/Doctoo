@@ -24,14 +24,19 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
     />
 );
 
+const NoMatch = ({ location }) => (
+  <div>
+    <h3>No match for <code>{location.pathname}</code></h3>
+  </div>
+)
+
 export const routing = (
     <Router>
       <div>
         <Route path="/" exact component={Home} /> 
         <Route path="/doctor/:id" exact component={Doctor} /> 
-        {/* <PrivateRoute  path="/calendar" component={calendar} />
-        <PrivateRoute  path="/settings" component={settings} /> */}
         <Route  path='/login' component={Login} />
+        <Route component={NoMatch} />
       </div>
     </Router>
   )
